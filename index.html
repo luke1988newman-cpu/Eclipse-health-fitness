@@ -70,6 +70,12 @@ h1,h2,h3,p,figure{margin:0}
 
 /* nav */
 .nav{position:sticky;top:16px;z-index:50;display:flex;justify-content:center;height:0;padding:0 16px}
+.nsoc{display:flex;gap:6px;margin-left:2px}
+.nsoc a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(243,240,234,.22);color:var(--bone);transition:background-color .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease)}
+.nsoc a:hover{background:var(--red);border-color:var(--red)}
+.nsoc a:focus-visible{outline:2px solid var(--bone);outline-offset:2px}
+.nsoc svg{width:18px;height:18px}
+@media (max-width:520px){.nsoc{display:none}}
 .pill{display:flex;align-items:center;gap:28px;height:56px;padding:0 8px 0 18px;border-radius:999px;background:rgba(22,22,24,.88);backdrop-filter:blur(14px);border:1px solid rgba(243,240,234,.14)}
 .pill a.l{font-size:14px;color:var(--mute);transition:color .2s var(--ease);padding:12px 0}
 .logo{display:flex;align-items:center;gap:10px}
@@ -535,6 +541,10 @@ addEventListener('scroll',u,{passive:true});document.addEventListener('scroll',u
   <span class="joins">
    <a class="btn red sm" href="https://secure20.clubwise.com/eclipsehealthandfitness/pos.asp">Join Eclipse</a>
    <a class="btn mofb sm" href="https://goteamup.com/p/5627660-ministry-of-fitness/memberships/156335/">Join MOF</a>
+  </span>
+  <span class="nsoc">
+   <a href="https://www.instagram.com/eclipsehealthandfitness" aria-label="Eclipse on Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+   <a href="https://www.facebook.com/HeskethBank2018/" aria-label="Eclipse on Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.5-3.2h-3.1V8.4c0-.9.4-1.6 1.7-1.6h1.5V4.1c-.3 0-1.2-.1-2.2-.1-2.3 0-3.8 1.4-3.8 3.9v2.4H8v3.2h2.7V21z"/></svg></a>
   </span>
  </nav>
 </header>
